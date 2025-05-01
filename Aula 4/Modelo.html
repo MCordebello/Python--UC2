@@ -23,7 +23,7 @@
         footer {
             margin-top: 40px;
             padding-top: 20px;
-            background-color: #f8f9fa;
+            background-color: #da90d6;
         }
         .icon {
             margin-right: 8px;
@@ -53,19 +53,51 @@ tr:hover {
   background-color: #fcfbfb;
 }
 
+tr: separator {
+    background-color: #C71585;
+}
+
+
+
     </style>
 </head>
 <body>
 
     <!-- Cabeçalho -->
-    <header class="container">
-        <h1 class="text-danger text-center">
-            <i class="fa-solid fa-candy-cane"></i>
-            Candy Store
-        </h1>
-        
-    </header>
+           
+    
+<title>Candy Store</title>
 
+<style>
+.dark-pink-box {
+background-color: #C71585; 
+color: rgb(230, 186, 230);
+padding: 90px;
+text-align: center;
+border-radius: 50px;
+
+
+}
+.logo {
+width: 180px; 
+position: absolute;
+top:50px; 
+left: 60px; 
+ }
+
+
+</style>
+</head>
+<body>
+<div class="dark-pink-box">
+ <h1>Candy Store</h1>
+ <img src="Candy Store escrito em rosa em uma bolsinha branca.jpeg" alt="Logo Candy Store" class="logo">
+</div>
+</body>
+</html>
+<br>
+<br>
+    
     <!-- Conteúdo principal -->
     <main class="container">
         <section id="section1" class="mb-5">
@@ -161,6 +193,44 @@ tr:hover {
 <td>R$ 7,90</td>
 </tr>
 </table>
+
+
+<title>Separador de Conteúdo</title>
+<style>
+.separator {
+height: 5px; /* Altura da linha */
+background-color: #FF6347; 
+margin: 20px 0; 
+}
+ </style>
+
+
+<main class="container">
+    <section id="section1" class="mb-5">
+        <h2 class="text-danger text-center" >
+            Faça seu cadastro e receba as promoções em primeira mão
+        </h2>
+<form>
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="text" class="form-control" id="nome" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail:</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="telefone" class="form-label">Telefone:</label>
+      <input type="tel" class="form-control" id="telefone" pattern="[0-9]{11}" title="11 dígitos">
+    </div>
+    <div class="mb-3">
+        <label for="Endereço" class="form-label">Endereço:</label>
+        <input type="end" class="form-control" id="endereço">
+      </div>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <button type="reset" class="btn btn-secondary">Limpar</button>
+  </form>
+
        </main>
 
     <!-- Rodapé -->
