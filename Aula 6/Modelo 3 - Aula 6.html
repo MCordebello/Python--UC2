@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5 com Bootstrap e Font Awesome</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5 com Bootstrap e Font Awesome.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados (opcional) -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            background-color: #f8f9fa;
+        }
+        .icon {
+            margin-right: 8px;
+        }
+
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        }
+
+        th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: left;
+        }
+
+        th {
+        background-color: #f4f4f4;
+        }
+
+tr:nth-child(even) {
+  background-color: #e0dee7a1;
+}
+
+tr:hover {
+  background-color: #fcfbfb;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="container">
+        <h1 class="text-danger text-center">
+            
+            Modelo
+        </h1>
+        
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <section id="section1" class="mb-5">
+            <h2 class="text-danger text-center" >
+          
+            </h2>
+    <br>
+        </br>
+          <div>  
+        <label for="estado">Estado:</label>
+<select id="estado" name="estado" required>
+  <option value="">Selecione...</option>
+  <option value="SP">São Paulo</option>
+  <option value="RJ">Rio de Janeiro</option>
+  <option value="MG">Minas Gerais</option>
+  <option value="ES">Espiríto Santo</option>
+</select>
+</div>
+<br>
+<br>
+<div>
+    <div class="col 12">
+    <label class="form-label">
+        Selecione seu gênero
+    </label>
+    <div class="form-check">
+
+<label>Gênero:</label>
+<input type="radio" id="masculino" name="genero" value="M" checked>
+<label for="masculino">Masculino</label>
+
+<div class="form check">
+<input type="radio" id="feminino" name="genero" value="F">
+<label for="feminino">Feminino</label>
+
+<input type="radio" id="feminino" name="genero" value="F">
+<label for="feminino">Feminino</label>
+
+        </section>
+    </div>
+
+    <div class="row mb-4">
+        <label>Interesses:</label>
+    <div class="col 12">
+        <label class="form-label"> Selecione:</label>
+        <input class="form-check-input" type="checkbox" value="Esportes">
+<input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+<label for="esportes">Esportes</label>
+<input class="form-check-input" type="checkbox" value="Esportes">
+<input type="checkbox" id="esportes" name="interesses[]" value="esportes">
+<label for="esportes">Esportes</label>
+<input type="checkbox" id="Gatos" name="interesses[]" value="Gatos">
+<label for="Gatos">Gatos</label>
+<input type="checkbox" id="Novela" name="interesses[]" value="Novela">
+<label for="Novela">Novela</label>
+<input type="checkbox" id="musica" name="interesses[]" value="musica">
+<label for="musica">Música</label>
+    </div>
+    <br>
+    <br>
+    <div class="row mb-4">
+        <div class="col-12">
+        <label for="Escolha a cor do seu perfil" class="form-label">Escolha a cor do seu perfil: </label>
+       
+<input type="color" class="form-control"id="cor-favorita" name="cor_favorita" value="#ff0000">
+
+    </div>
+<br>
+<br>
+<div class="col 12">
+    <h4> Foto do Perfil:</h4>
+<input type="file" class="form-control"
+id="foto" name="foto" accept="image/*" required>
+
+</div>
+
+<div>
+    
+<p class="text=muted mt-2"> 
+    Formatos aceitos: JPEG, PNG, GIF. Tamanha Máximo: 25MB
+          
+</div>
+       </main>
+
+    <!-- Rodapé -->
+    <footer id="footer" class="container text-center">
+        <p class="text-muted pb-3"><i class="far fa-copyright icon"></i> 
+       2025
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
